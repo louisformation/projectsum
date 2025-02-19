@@ -63,13 +63,13 @@ pipeline {
             }
         }
 
-       /*  stage("Run and Test") {
+         stage("Run and Test") {
             steps {
                 sh 'chmod +x script.sh'
                 sh './script.sh'
             }
         }
-
+        /*
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('sonarqube') {
