@@ -87,6 +87,7 @@ pipeline {
     post {
         always {
             // Nettoyage après le pipeline
+            //et deconnection
             sh 'docker stop test || true'
             sh 'docker rm test || true'
             sh 'docker logout'
