@@ -17,7 +17,7 @@ pipeline {
 
         stage("Compile") {
             steps {
-                sh 'chmod +m mvnw'
+                sh 'chmod +x mvnw'
                 sh './mvnw compile'
             }
         }
